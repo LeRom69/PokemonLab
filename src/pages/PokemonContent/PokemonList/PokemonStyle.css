@@ -1,0 +1,62 @@
+
+.index-style {
+    counter-reset: li;
+    list-style: none;
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(84, 84, 87, 0.5);
+}
+
+.index-style a {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 0.8em;
+    margin: 0.5em 0 0.5em 10.5em;
+    background: #d4ecea;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.index-style a:hover {
+    background: #d9f9fe;
+}
+
+.index-style a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -6.6em;
+    top: 21px;
+    padding-top: 41px;
+    margin-top: -1em;
+    background: #7fd6e5;
+    height: 69px;
+    width: 111px;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.index-style a:after {
+    position: absolute;
+    content: "";
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.index-style a:hover:after {
+    left: -14px;
+    border-left-color:#7fd6e5;
+}
+
+.pokemon-name-style{
+    font-size: 22px;
+    margin-left: 5px;
+    position: relative;
+    top: -33px;
+}
